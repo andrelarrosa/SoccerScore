@@ -5,7 +5,7 @@ async function resultadoJogo(){
     const browser = await puppeteer.launch()
     const page = await browser.newPage()
     const yourTeam = readline.question("Informe o time que você quer obter informações: ")
-    const URL = `https://www.google.com/search?sxsrf=ALeKk00vj8B6I_dJfY5UKTzx_lds3cGsHQ%3A1604538696663&ei=SFGjX8mKKJeu5OUPoZ-UYA&q=${yourTeam}`
+    const URL = `https://www.google.com/search?sxsrf=ALeKk00vj8B6I_dJfY5UKTzx_lds3cGsHQ%3A1604538696663&ei=SFGjX8mKKJeu5OUPoZ-UYA&q=${yourTeam}+ultimo+jogo`
     await page.goto(URL)
     
     const socreYourTeam = await page.evaluate(()=>{
