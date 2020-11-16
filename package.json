@@ -1,0 +1,15 @@
+{
+  "name": "placardejogos",
+  "version": "1.0.0",
+  "description": "API to get a soccer scoreboard to games of today",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "puppeteer": "^5.4.1",
+    "readline-sync": "^1.4.10"
+  }
+}
